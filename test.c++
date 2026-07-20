@@ -10,11 +10,22 @@ void printArrays(int arrays[10])
     }
 }
 
+void ReadArrays(int arrays[10])
+{
+
+    for (int i = 0; i <= 9; i++)
+    {
+        cout << "Enter the Number { " << i + 1 << " }";
+        cin >> arrays[i];
+    }
+}
+
 int main()
 {
 
-    int arrays[10] = {12, 32, 32, 3, 21, 1, 1, 1, 3, 2};
-
+    int arrays[10];
+    ReadArrays(arrays);
+    cout << "Your Numbers is : " << endl;
     printArrays(arrays);
 
     cout << endl;
